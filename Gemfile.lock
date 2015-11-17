@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rake-tools (0.1.0)
+    orderly_garden (0.1.0)
       bundler-audit (> 0)
       rake (~> 10.0)
       rubocop (> 0)
@@ -36,7 +36,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.7)
-  rake-tools!
+  orderly_garden!
 
 BUNDLED WITH
    1.10.6

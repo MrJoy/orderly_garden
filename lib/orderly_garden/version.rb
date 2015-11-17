@@ -1,3 +1,3 @@
-module RakeTools
+module OrderlyGarden
   VERSION = "0.1.0"
 end

@@ -3,9 +3,9 @@ require "shellwords"
 
 require "rake/clean"
 
-# A set of helpers for Rake-driven projects, aimed especially at streamlining Rake workflows.
-module RakeTools
-  # Initialize `rake-tools`.  Configures Rake, and loads some handy tasks.
+# A set of tools for Rake and Ruby workflows, to help keep things neat and tidy.
+module OrderlyGarden
+  # Initialize `orderly_garden`.  Configures Rake, and loads some handy tasks.
   def self.init!
     # TODO: Pare this to CPU count, or possibly half that because hyperthreading usually is not our
     # TODO: friend.
@@ -28,9 +28,9 @@ protected
   end
 end
 
-require "rake_tools/monkey_patches"
-require "rake_tools/version"
-require "rake_tools/dsl"
+require "orderly_garden/monkey_patches"
+require "orderly_garden/version"
+require "orderly_garden/dsl"
 
 # TODO: Make this optional.
-include RakeTools::DSL
+include OrderlyGarden::DSL

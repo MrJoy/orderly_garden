@@ -1,4 +1,4 @@
-module RakeTools
+module OrderlyGarden
   # Rake DSL constructs.
   module DSL
     # Create and manage a temp file, replacing `fname` with the temp file, if `fname` is provided.

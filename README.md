@@ -1,6 +1,6 @@
-# RakeTools
+# OrderlyGarden
 
-A set of tools for Rake and Ruby workflows, including:
+A set of tools for Rake and Ruby workflows, to help keep things neat and tidy.
 
 * `parent_task`: Automatically run all sub-tasks in a namespace when the namespace-named task is run.
 * Limit the number of Rake threads to a sane number by default.
@@ -14,7 +14,7 @@ A set of tools for Rake and Ruby workflows, including:
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "rake-tools", require: false, git: "git@github.com:MrJoy/rake-tools.git"
+gem "orderly_garden", require: false, git: "git@github.com:MrJoy/orderly_garden.git"
 ```
 
 And then execute:
@@ -26,7 +26,7 @@ bundle
 Or install it yourself as:
 
 ```bash
-gem install rake-tools
+gem install orderly_garden
 ```
 
 
@@ -45,7 +45,7 @@ TODO: Write usage instructions here.  Hint, try `rake -T`.
     RakeTools.init!
     ```
 1. Create a file named `.rubocop.local.yml` with your own Rubocop rules / configuration.
-    * This will be merged with the saner defaults provided by `rake-tools` when running `rake lint:rubocop`.
+    * This will be merged with the saner defaults provided by `orderly_garden` when running `rake lint:rubocop`.
 1. Add `/.rubocop.yml` to your `.gitignore` file, as this will be auto-generated.
 
 ### Running The Tools
@@ -82,7 +82,7 @@ end
 
 ## Contributing
 
-1. Fork it ( https://github.com/MrJoy/rake-tools/fork )
+1. Fork it ( https://github.com/MrJoy/orderly_garden/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

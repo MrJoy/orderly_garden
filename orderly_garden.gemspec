@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "rake_tools/version"
+require "orderly_garden/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "rake-tools"
-  spec.version       = RakeTools::VERSION
+  spec.name          = "orderly_garden"
+  spec.version       = OrderlyGarden::VERSION
   spec.authors       = ["Jon Frisby"]
   spec.email         = ["jfrisby@mrjoy.com"]
   spec.summary       = "Shared tools for Rake workflows."
-  spec.homepage      = "https://github.com/MrJoy/rake-tools"
+  spec.homepage      = "https://github.com/MrJoy/orderly_garden"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
