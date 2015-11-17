@@ -18,7 +18,7 @@ module OrderlyGarden
 protected
 
   def self.task_files
-    task_dir        = File.expand_path("../../../tasks", __FILE__)
+    task_dir        = File.expand_path("../../tasks", __FILE__)
     raw_task_files  = FileList["#{task_dir}/**/*.rake"] +
                       FileList["tasks/**/*.rake"]
     raw_task_files
