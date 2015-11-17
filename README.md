@@ -7,6 +7,8 @@ A set of tools for Rake and Ruby workflows, to help keep things neat and tidy.
 * Lint metric for code volume if `cloc` is installed.
 * Ruby style enforcement, and slightly saner Rubocop defaults.
 * Dependency checking with `bundler-audit`, and `bundle outdated`.
+* `with_tempfile`: Manage a temp file for you, and optionally replace a destination path with it upon success.
+* `write_file`: Write an array of strings to a file ensuring they're joined by newlines and have a trailing newline.
 
 
 ## Installation
