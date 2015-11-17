@@ -41,8 +41,8 @@ TODO: Write usage instructions here.  Hint, try `rake -T`.
     require "rubygems"
     require "bundler/setup"
     Bundler.require(:default, :development, :test)
-    require "rake_tools"
-    RakeTools.init!
+    require "orderly_gardem"
+    OrderlyGarden.init!
     ```
 1. Create a file named `.rubocop.local.yml` with your own Rubocop rules / configuration.
     * This will be merged with the saner defaults provided by `orderly_garden` when running `rake lint:rubocop`.

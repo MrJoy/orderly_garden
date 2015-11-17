@@ -8,7 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = OrderlyGarden::VERSION
   spec.authors       = ["Jon Frisby"]
   spec.email         = ["jfrisby@mrjoy.com"]
-  spec.summary       = "Shared tools for Rake workflows."
+  spec.summary       = "A set of tools for Rake and Ruby workflows, to help keep things neat and"\
+                       " tidy."
   spec.homepage      = "https://github.com/MrJoy/orderly_garden"
   spec.license       = "MIT"
 
