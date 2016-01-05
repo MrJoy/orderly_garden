@@ -31,10 +31,7 @@ Or install it yourself as:
 gem install orderly_garden
 ```
 
-
 ## Usage
-
-TODO: Write usage instructions here.  Hint, try `rake -T`.
 
 ### Setup
 
@@ -52,9 +49,16 @@ TODO: Write usage instructions here.  Hint, try `rake -T`.
 
 ### Running The Tools
 
-```bash
-rake lint # Run all `lint:*` tasks.  Includes `bundler-audit` and `Rubocop` by default.
 ```
+rake -T
+# rake lint                # Run all lint checks against the code
+# rake lint:bundler        # Check for outdated gems
+# rake lint:bundler-audit  # Run bundler-audit against the Gemfile
+# rake lint:cloc           # Show LOC metrics for project using cloc
+# rake lint:rubocop        # Run Rubocop against the codebase
+```
+
+Using the DSL constructs (such as `with_tempfile`, `write_file`...) should be pretty self-explanatory if you take a peek at the source.
 
 ### Custom Lint Tasks
 
