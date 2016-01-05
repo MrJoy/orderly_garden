@@ -35,7 +35,7 @@ namespace :lint do
     end
   end
 
-  if `which clock`.strip != ""
+  if `which cloc`.strip != ""
     desc "Show LOC metrics for project using cloc."
     task :cloc do
       # TODO: Make this list customizable.
