@@ -2,6 +2,11 @@
 
 ## Next Version
 
+## v0.1.2 - 2016-01-05 - Bug fix.
+
+* Fix an embarassing typo that made the `lint:cloc` task never usable.
+
+
 ## v0.1.1 - 2015-11-17 - Bug fixes.
 
 * Fix for bug causing built-in `lint` tasks to not be loaded due to files being moved around in project.
