@@ -65,6 +65,11 @@ Style/EmptyLineBetweenDefs:
 Style/ExtraSpacing:
   AllowForAlignment: true
 
+Style/FileName:
+  Exclude:
+  - 'Gemfile'
+  - 'Rakefile'
+
 Style/FormatString:
   EnforcedStyle: percent
   SupportedStyles:
