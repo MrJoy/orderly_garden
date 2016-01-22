@@ -15,16 +15,18 @@ module OrderlyGarden
     task_files.each { |fname| load fname }
   end
 
-protected
+  class << self
+  protected
 
-  def self.task_files
-    task_dir        = File.expand_path("../../tasks", __FILE__)
-    raw_task_files  = FileList["#{task_dir}/**/*.rake"] +
-                      FileList["tasks/**/*.rake"]
-    raw_task_files
-      .map { |fname| File.expand_path(fname) }
-      .sort
-      .uniq
+    def task_files
+      task_dir        = File.expand_path("../../tasks", __FILE__)
+      raw_task_files  = FileList["#{task_dir}/**/*.rake"] +
+                        FileList["tasks/**/*.rake"]
+      raw_task_files
+        .map { |fname| File.expand_path(fname) }
+        .sort
+        .uniq
+    end
   end
 end
 

@@ -2,11 +2,13 @@
 
 ## Next Version
 
-## v0.2.0 - 2016-01-2 - Updates for RuboCop 0.36.0
+## v0.2.0 - 2016-01-2 - RuboCop 0.36.0, style touchups.
 
-* Change from `Style/TrailingComma` to `Style/TrailingCommaInLiteral`.
-* Change from `MultiSpaceAllowedForOperators` to `AllowForAlignment`.
-* Update from `'String#%'` to `percent` in `Style/FormatString`.
+* Updates for RuboCop 0.36.0:
+    * Change from `Style/TrailingComma` to `Style/TrailingCommaInLiteral`.
+    * Change from `MultiSpaceAllowedForOperators` to `AllowForAlignment`.
+    * Update from `'String#%'` to `percent` in `Style/FormatString`.
+* A couple minor style touchups.
 
 
 ## v0.1.2 - 2016-01-05 - Bug fix.

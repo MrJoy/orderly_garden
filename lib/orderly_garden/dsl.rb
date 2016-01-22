@@ -2,9 +2,9 @@ module OrderlyGarden
   # Rake DSL constructs.
   module DSL
     # Create and manage a temp file, replacing `fname` with the temp file, if `fname` is provided.
-    def with_tempfile(fname = nil, &block)
+    def with_tempfile(fname = nil, &_block)
       Tempfile.open("tmp") do |f|
-        block.call(f.path, f.path.shellescape)
+        yield f.path, f.path.shellescape
         FileUtils.cp(f.path, fname) unless fname.nil?
       end
     end

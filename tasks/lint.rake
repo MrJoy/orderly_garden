@@ -2,6 +2,7 @@ RUBOCOP_HEADING = "# #{('WARNING!  ' * 7).rstrip}\n"\
                   "# AUTO-GENERATED FILE!  DO NOT EDIT DIRECTLY!\n"\
                   "\n"\
                   "# Override from `.rubocop.local.yml` and re-run `rake lint:rubocop` instead!\n"
+                  .freeze
 
 namespace :lint do
   desc "Run Rubocop against the codebase."
