@@ -66,8 +66,9 @@ Style/ExtraSpacing:
   AllowForAlignment: true
 
 Style/FormatString:
-  EnforcedStyle: 'String#%'
-  SupportedStyles: 'String#%'
+  EnforcedStyle: percent
+  SupportedStyles:
+  - percent
 
 # Style/GuardClause:
 #   Enabled: false
@@ -92,7 +93,7 @@ Style/SingleLineMethods:
   Enabled: false
 
 Style/SpaceAroundOperators:
-  MultiSpaceAllowedForOperators:
+  AllowForAlignment:
     - '='
     - '=>'
     - '||='
@@ -104,6 +105,8 @@ Style/SpaceAroundOperators:
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
-Style/TrailingComma:
+Style/TrailingCommaInArguments:
+  Enabled: false
+
+Style/TrailingCommaInLiteral:
   EnforcedStyleForMultiline: comma
-  SupportedStyles: comma

@@ -2,6 +2,13 @@
 
 ## Next Version
 
+## v0.2.0 - 2016-01-2 - Updates for RuboCop 0.36.0
+
+* Change from `Style/TrailingComma` to `Style/TrailingCommaInLiteral`.
+* Change from `MultiSpaceAllowedForOperators` to `AllowForAlignment`.
+* Update from `'String#%'` to `percent` in `Style/FormatString`.
+
+
 ## v0.1.2 - 2016-01-05 - Bug fix.
 
 * Fix an embarassing typo that made the `lint:cloc` task never usable.
