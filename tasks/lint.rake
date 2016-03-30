@@ -24,7 +24,7 @@ namespace :lint do
 
     results = (RUBOCOP_HEADING + defaults.merge(overrides).to_yaml).rstrip
     write_file(".rubocop.yml", [results])
-    sh "rubocop --display-cop-names"
+    sh "rubocop --display-cop-names --extra-details --display-style-guide"
   end
 
   desc "Run bundler-audit against the Gemfile."
