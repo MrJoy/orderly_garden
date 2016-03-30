@@ -2,6 +2,15 @@
 
 ## Next Version
 
+## v0.3.0 - 2016-03-30 - Usability / streamlining.
+
+* Update for RuboCop deprecations.
+* Don't complain about filename for `Gemfile` and `Rakefile`.
+* Let RSpec suites have long lines, so you always get the full assertion statement on a test failure.
+* Produce more detailed output if it's provided in the config by adding `--extra-details` and `--display-style-guide` options.
+* ALlow newer versions of Rake.
+
+
 ## v0.2.0 - 2016-01-02 - RuboCop 0.36.0, style touchups.
 
 * Updates for RuboCop 0.36.0:
