@@ -17,6 +17,10 @@ Lint/FormatParameterMismatch:
 
 Metrics/LineLength:
   Max: 100
+  Exclude:
+  # RSpec spits out the failing assertion, but assumes it's single-line. To avoid interfering with
+  # testing workflow, we allow an exception to line-length:
+  - 'spec/**/*_spec.rb'
 
 Metrics/MethodLength:
   Exclude:
