@@ -16,11 +16,17 @@ namespace :lint do
     overrides             ||= {}
 
     # Be slightly intelligent about merging AllCops, but allow overriding things:
+    # TODO: Allow blending include/exclude lists for any block!
     overrides["AllCops"]  ||= {}
     o_allcops               = overrides["AllCops"]
     d_allcops               = defaults["AllCops"] || {}
-    o_allcops["Exclude"] ||= d_allcops["Exclude"] if d_allcops.key?("Exclude")
-    o_allcops["Include"] ||= d_allcops["Include"] if d_allcops.key?("Include")
+    o_allcops["Exclude"]    = Array(o_allcops["Exclude"])
+    o_allcops["Include"]    = Array(o_allcops["Include"])
+    o_allcops["Exclude"]   += Array(d_allcops["Exclude"]) if d_allcops.key?("Exclude")
+    o_allcops["Include"]   += Array(d_allcops["Include"]) if d_allcops.key?("Include")
+
+    o_allcops["Exclude"]    = o_allcops["Exclude"].sort.uniq
+    o_allcops["Exclude"]    = o_allcops["Exclude"].sort.uniq
 
     results = (RUBOCOP_HEADING + defaults.merge(overrides).to_yaml).rstrip
     write_file(".rubocop.yml", [results])
