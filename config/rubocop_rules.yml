@@ -20,7 +20,7 @@ Metrics/LineLength:
 
 Metrics/MethodLength:
   Exclude:
-  - 'db/migrate/*'
+  - 'db/migrate/**/*'
 
 Performance/StringReplacement:
   Enabled: true
