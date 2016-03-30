@@ -19,6 +19,7 @@ module OrderlyGarden
   protected
 
     def task_files
+      # TODO: Clean this up, and conform to Rails-y projects if we're in a Rails project.
       task_dir        = File.expand_path("../../tasks", __FILE__)
       raw_task_files  = FileList["#{task_dir}/**/*.rake"] +
                         FileList["tasks/**/*.rake"]
