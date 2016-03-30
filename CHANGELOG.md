@@ -2,7 +2,7 @@
 
 ## Next Version
 
-## v0.2.0 - 2016-01-2 - RuboCop 0.36.0, style touchups.
+## v0.2.0 - 2016-01-02 - RuboCop 0.36.0, style touchups.
 
 * Updates for RuboCop 0.36.0:
     * Change from `Style/TrailingComma` to `Style/TrailingCommaInLiteral`.
