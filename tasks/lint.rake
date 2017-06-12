@@ -33,7 +33,9 @@ namespace :lint do
     write_file(".rubocop.yml", [results])
     sh "rubocop --display-cop-names --extra-details --display-style-guide"
   end
+end
 
+namespace :lint do
   desc "Run bundler-audit against the Gemfile."
   task :'bundler-audit' do
     require "bundler/audit/cli"
@@ -42,15 +44,19 @@ namespace :lint do
       Bundler::Audit::CLI.start [command]
     end
   end
+end
 
-  if `which cloc`.strip != ""
+if `which cloc`.strip != ""
+  namespace :lint do
     desc "Show LOC metrics for project using cloc."
     task :cloc do
       # TODO: Make this list customizable.
       sh "cloc . --exclude-dir=coverage,.bundle,tmp"
     end
   end
+end
 
+namespace :lint do
   desc "Check for outdated gems."
   task :bundler do
     # Don't error-out if this fails, since we may not be able to update some
