@@ -22,5 +22,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "rake", ">= 10.0"
   spec.add_runtime_dependency "bundler-audit", "> 0"
-  spec.add_runtime_dependency "rubocop", "> 0"
+  spec.add_runtime_dependency "rubocop", ">= 0.49.0"
 end
