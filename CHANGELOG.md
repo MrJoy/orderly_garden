@@ -4,6 +4,7 @@
 
 * Update to Ruby 2.4.1.
 * Fix some documentation errors.
+* Update `rubocop` rules to use new namespacing from `0.49.0`.
 
 
 ## v0.3.0 - 2016-03-30 - Usability / streamlining.

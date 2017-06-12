@@ -29,10 +29,10 @@ Metrics/MethodLength:
 Performance/StringReplacement:
   Enabled: true
 
-Style/AccessModifierIndentation:
+Layout/AccessModifierIndentation:
   EnforcedStyle: outdent
 
-Style/AlignHash:
+Layout/AlignHash:
   EnforcedColonStyle: table
   # TODO: Err, maybe keys here?
   EnforcedLastArgumentHashStyle: ignore_implicit
@@ -45,7 +45,7 @@ Style/CollectionMethods:
     find_all: select
 
 # Allow comments to be aligned to one another.
-Style/CommentIndentation:
+Layout/CommentIndentation:
   Enabled: false
 
 # Don't bother with class documentation for Rails application class, and DB
@@ -63,10 +63,10 @@ Style/DoubleNegation:
 # Style/DotPosition:
 #   EnforcedStyle: trailing
 
-Style/EmptyLineBetweenDefs:
+Layout/EmptyLineBetweenDefs:
   AllowAdjacentOneLineDefs: true
 
-Style/ExtraSpacing:
+Layout/ExtraSpacing:
   AllowForAlignment: true
 
 Style/FileName:
@@ -91,7 +91,7 @@ Style/LineEndConcatenation:
 Style/RegexpLiteral:
   AllowInnerSlashes: false
 
-Style/RescueEnsureAlignment:
+Layout/RescueEnsureAlignment:
   Enabled: true
 
 # Style/RescueModifier:
@@ -101,7 +101,7 @@ Style/RescueEnsureAlignment:
 Style/SingleLineMethods:
   Enabled: false
 
-Style/SpaceAroundOperators:
+Layout/SpaceAroundOperators:
   AllowForAlignment:
     - '='
     - '=>'
