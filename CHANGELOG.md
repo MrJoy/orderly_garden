@@ -2,6 +2,8 @@
 
 ## Next Version
 
+## v0.3.1 - 2017-06-12 - Update Rubocop.
+
 * Update to Ruby 2.4.1.
 * Fix some documentation errors.
 * Update `rubocop` rules to use new namespacing from `0.49.0`.
