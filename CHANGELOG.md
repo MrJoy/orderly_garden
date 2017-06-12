@@ -2,6 +2,10 @@
 
 ## Next Version
 
+* Update to Ruby 2.4.1.
+* Fix some documentation errors.
+
+
 ## v0.3.0 - 2016-03-30 - Usability / streamlining.
 
 * Update for RuboCop deprecations.

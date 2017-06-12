@@ -35,17 +35,18 @@ gem install orderly_garden
 
 ### Setup
 
-1. In `Rakefile`, add this -- replacing the domain name with the URL of your private Docker registry:
+1. In `Rakefile`, add this:
     ```ruby
     require "rubygems"
     require "bundler/setup"
     Bundler.require(:default, :development, :test)
-    require "orderly_gardem"
+    require "orderly_garden"
     OrderlyGarden.init!
     ```
 1. Create a file named `.rubocop.local.yml` with your own Rubocop rules / configuration.
     * This will be merged with the saner defaults provided by `orderly_garden` when running `rake lint:rubocop`.
-1. Add `/.rubocop.yml` to your `.gitignore` file, as this will be auto-generated.
+1. `git rm .rubocop.yml`, if currently versioned.  This file will be auto-generated going forward, and should not be versioned anymore.
+1. Add `/.rubocop.yml` to your `.gitignore` file.
 
 ### Running The Tools
 
