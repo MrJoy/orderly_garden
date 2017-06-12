@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # rubocop:disable Style/Documentation
 # Monkey-patch `String` and `Pathname` with some handy-dandy helpers.
 

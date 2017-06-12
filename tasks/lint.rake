@@ -1,8 +1,9 @@
+# frozen_string_literal: true
+
 RUBOCOP_HEADING = "# #{('WARNING!  ' * 7).rstrip}\n"\
                   "# AUTO-GENERATED FILE!  DO NOT EDIT DIRECTLY!\n"\
                   "\n"\
                   "# Override from `.rubocop.local.yml` and re-run `rake lint:rubocop` instead!\n"
-                  .freeze
 
 namespace :lint do
   desc "Run Rubocop against the codebase."
@@ -10,9 +11,9 @@ namespace :lint do
     require "yaml"
     puts "Running Rubocop..."
     defaults_file           = File.expand_path("../../config/rubocop_rules.yml", __FILE__)
-    defaults                = YAML.load(File.read(defaults_file))
+    defaults                = YAML.safe_load(File.read(defaults_file))
     local_opts              = ".rubocop.local.yml"
-    overrides               = YAML.load(File.read(local_opts)) if File.exist?(local_opts)
+    overrides               = YAML.safe_load(File.read(local_opts)) if File.exist?(local_opts)
     overrides             ||= {}
 
     # Be slightly intelligent about merging AllCops, but allow overriding things:
@@ -37,7 +38,7 @@ namespace :lint do
   task :'bundler-audit' do
     require "bundler/audit/cli"
 
-    %w(update check).each do |command|
+    %w[update check].each do |command|
       Bundler::Audit::CLI.start [command]
     end
   end

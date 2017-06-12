@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module OrderlyGarden
   # Rake DSL constructs.
   module DSL
@@ -28,7 +30,7 @@ module OrderlyGarden
         Rake::Task
           .tasks
           .select { |t| t.name =~ /^#{name}:/ }
-          .sort { |a, b| a.name <=> b.name }
+          .sort_by(&:name)
           .each(&:execute)
       end
     end

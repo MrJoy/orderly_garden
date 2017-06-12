@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # rubocop:disable Style/LeadingCommentSpace
 #ruby-gemset=orderly_garden
 # rubocop:enable Style/LeadingCommentSpace
