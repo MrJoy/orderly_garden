@@ -16,7 +16,7 @@ A set of tools for Rake and Ruby workflows, to help keep things neat and tidy.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "orderly_garden", require: false, git: "git@github.com:MrJoy/orderly_garden.git"
+gem "orderly_garden", require: false
 ```
 
 And then execute:
